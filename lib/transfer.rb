@@ -15,6 +15,7 @@ class Transfer
   
   def execute_transaction
     if valid? receiver.deposit(@amount) && sender.deposit(@amount*-1)
+    end
   end
     
   
