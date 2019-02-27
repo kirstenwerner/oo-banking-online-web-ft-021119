@@ -13,7 +13,7 @@ class Transfer
   def valid?
     sender.valid? == true && receiver.valid? == true 
   end 
-  binding.pry
+  # binding.pry
   def execute_transaction
     if self.valid? && sender.balance > @amount
       receiver.deposit(@amount) 
